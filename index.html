@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="index.css">
+<html lang="en">
 
 <head>
-    <title> Calculadorita </title>
-    <h1 id="miTitulo"> Calculadora </h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadorita</title>
 </head>
-<main> </main>
 
 <body>
-    <input id="valor1" placeholder="ingrese el primer valor numerico">
-    <input id="op" placeholder="Ingrese el operador a utilizar: +,-,*,">
-    <input id="valor2" placeholder="ingrese el segundo valor numerico">
-    <input id="botonCalcular" type="submit" value="Calcular">
-    <br>
-    <pr id="resultado"> </pr>
+    <header>
+        <h1 id="miTitulo">Calculadora</h1>
+    </header>
+
+    <main>
+        <input id="valor1" placeholder="Ingrese el primer valor numérico">
+        <input id="op" placeholder="Ingrese el operador a utilizar: +, -, *">
+        <input id="valor2" placeholder="Ingrese el segundo valor numérico">
+        <input id="botonCalcular" type="submit" value="Calcular">
+        <br>
+        <p id="resultado"></p>
+    </main>
+
+    <script src="index.js" defer></script>
 </body>
-<script src="index.js" defer> </script>
 
 </html>
