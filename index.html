@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Calculadorita</title>
+    <title>calculadora v2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1 id="miTitulo">Calculadora</h1>
-    </header>
-
-    <main>
-        <input id="valor1" placeholder="Ingrese el primer valor numérico">
-        <input id="op" placeholder="Ingrese el operador a utilizar: +, -, *">
-        <input id="valor2" placeholder="Ingrese el segundo valor numérico">
-        <input id="botonCalcular" type="submit" value="Calcular">
-        <br>
-        <p id="resultado"></p>
-    </main>
-
-    <script src="index.js" defer></script>
+<div class="calc-container">
+    <div class="calc">
+        <div class="display" id="display"></div>
+        <div class="delete"><button onclick="clean()">C</button></div>
+        <div class="funcion"><button onclick="conc('/')">/</button></div>
+        <div class="funcion"><button onclick="conc('*')">X</button></div>
+        <div class="funcion"><button onclick="conc('-')">-</button></div>
+        <div class="numero"><button onclick="conc(7)">7</button></div>
+        <div class="numero"><button onclick="conc(8)">8</button></div>
+        <div class="numero"><button onclick="conc(9)">9</button></div>
+        <div class="funcion"><button onclick="conc('+')">+</button></div>
+        <div class="numero"><button onclick="conc(4)">4</button></div>
+        <div class="numero"><button onclick="conc(5)">5</button></div>
+        <div class="numero"><button onclick="conc(6)">6</button></div>
+        <div class="numero"><button onclick="conc(1)">1</button></div>
+        <div class="numero"><button onclick="conc(2)">2</button></div>
+        <div class="numero"><button onclick="conc(3)">3</button></div>
+        <div class="numero zero"><button onclick="conc(0)">0</button></div>
+        <div class="enter"><button onclick="enter()">Enter</button></div>
+    </div>
+</div>
+<script src="./scripts.js"></script>
 </body>
-
 </html>
